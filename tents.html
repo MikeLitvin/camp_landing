@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style type="text/tailwindcss">
+  @layer components {
+    .black_hole {
+        @apply bg-clifford;
+    }
+  }
+</style>
+
+<script src="tailwind.config.js" type="text/javascript"></script>
+
+<body class="font-['Arial']">
+  <div
+    class="absolute h-full w-full bg-[url('./img/mobile_others_header.svg')] bg-contain bg-no-repeat lg:bg-[url('./img/desktop_main_header.svg')] lg:bg-auto -z-10">
+  </div>
+  <header class="flex flex-row justify-between mx-10 pt-2">
+    <img src="./img/logo.svg">
+    <button>
+      <img src="./img/burger_menu.svg">
+    </button>
+  </header>
+  <main>
+    <h1 class="mt-4 text-xl text-center font-black text-white">Варианты размещения</h1>
+    <section class="mt-44">
+        <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+            <p class="text-xl font-bold w-72 text-center">Кемпинг «Эконом»</p>
+            <img src="./img/eco_camp.svg" alt="" class="w-72">
+            <p class="text-sm leading-4 w-72 font-normal">Возможность разместиться в семейном 
+                кемпинге Snitko.Camp со своей палаткой.
+                Вы устанавливаете своё оборудование 
+                и подключаетесь к инфраструктуре лагеря.</p>
+                <ul class="text-sm leading-4 w-72 font-normal">
+                    <p>Сервис лагеря, доступный всем:</p>
+                    <li>&#9675; Зона приготовления приема пищи</li>
+                    <li>&#9675; Подвоз воды и дров по зпросу</li>
+                    <li>&#9675; Туалеты и вывоз мусора</li>
+                    <li>&#9675; Парковка для машины</li>
+                </ul>
+                <p class="font-bold text-sm leading-4 w-72">Дети до 10 лет бесплатно!<br>
+                Стоимость: 1200&#8381;/сутки</p>
+            <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Забронировать</button>
+          </div>
+
+          <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+            <p class="text-xl font-bold w-72 text-center">Кемпинг «Стандарт»</p>
+            <img src="./img/standart_camp.svg" alt="" class="w-72">
+            <p class="text-sm leading-4 w-72 font-normal">Отдых в комфортных кемпинговых 
+                палатках, размещенных на деревянных 
+                настилах.</p>
+                <ul class="text-sm leading-4 w-72 font-normal">
+                    <p>Комплектация палаток «Стандарт»:</p>
+                    <li>&#9675; Самонадувающиеся коврики</li>
+                    <li>&#9675; Автономное освещение</li>
+                    <li>&#9675; Кемпинговый стол и стулья</li>
+                    <li>&#9675; Парковка для машины</li>
+                </ul>
+                <p class="text-sm leading-4 w-72 font-normal">В палатке может разместиться до 4 взрослых</p>
+                <p class="font-bold text-sm leading-4 w-72">Дети до 10 лет бесплатно!<br>
+                Стоимость: от 3000&#8381;/сутки</p>
+            <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Забронировать</button>
+          </div>
+
+          <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+            <p class="text-xl font-bold w-72 text-center">Кемпинг «Комфорт»</p>
+            <img src="./img/comfort_camp.svg" alt="" class="w-72">
+            <p class="text-sm leading-4 w-72 font-normal">В этом типе размещения вы ощутите
+                комфорт загородного отеля в палатке</p>
+                <ul class="text-sm leading-4 w-72 font-normal">
+                    <p>Комплектация палаток «Комфорт»:</p>
+                    <li>&#9675; Большое спальное место 3x2м</li>
+                    <li>&#9675; Самонадувающиеся коврики</li>
+                    <li>&#9675; Электропростыни для комфорта ночью</li>
+                    <li>&#9675; Освещение и розетки в палатке</li>
+                    <li>&#9675; Полностью оборудованная кухня</li>
+                    <li>&#9675; Деревянный настил</li>
+                </ul>
+                <p class="text-sm leading-4 w-72 font-normal">В палатке может разместиться до 4 взрослых</p>
+                <p class="font-bold text-sm leading-4 w-72">Дети до 10 лет бесплатно!<br>
+                Стоимость: от 5000&#8381;/сутки</p>
+            <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Забронировать</button>
+          </div>
+    </section>
+
+    <section class="mt-5 mb-16">
+        <p class="font-bold mb-5 text-center text-xl">
+          Дополнительные услуги
+        </p>
+        <ul class="w-max mx-auto space-y-7 text-white text-sm">
+          <li class="flex items-center bg-[#33813A] w-72 h-24 rounded-[10px]">
+            <img class="mr-6 ml-8" src="./img/woods.svg">
+            <div class="flex flex-col">
+                <span class="font-bold">Вязанка дров</span>
+                <span>350&#8381;</span> 
+            </div>
+          </li>
+          <li class="flex items-center bg-[#33813A] w-72 h-24 rounded-[10px]">
+            <img class="mr-6 ml-8" src="./img/water.svg">
+            <div class="flex flex-col">
+                <span class="font-bold">Пресная вода</span>
+                <span>150&#8381;/бак 50л</span> 
+            </div>
+          </li>
+          <li class="flex items-center bg-[#33813A] w-72 h-24 rounded-[10px]">
+            <img class="mr-6 ml-8" src="./img/fire.svg">
+            <div class="flex flex-col">
+                <span class="font-bold">Аренда мангала</span>
+                <span>400&#8381;/вечер</span> 
+            </div>
+          </li>
+          <li class="flex items-center bg-[#33813A] w-72 h-24 rounded-[10px]">
+            <img class="mr-6 ml-8" src="./img/lazo.svg">
+            <div class="flex flex-col">
+                <span class="font-bold">Экскурсии по<br>лазовскому району</span>
+                <span>от 1500&#8381;</span> 
+            </div>
+          </li>
+        </ul>
+      </section>
+  </main>
+  <footer class="text-white bg-[#33813A]">
+    <div class="bg-white">
+      <img src="./img/footer_hat.svg" alt="" class="w-full">
+    </div>
+    <div class="grid grid-cols-2 grid-flow-col text-white">
+
+      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Главная</p>
+          <a href="">
+            <span>Фото</span>
+          </a>
+          <a href="">
+            <span>Видео</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Шатры</p>
+          <a href="">
+            <span>Эконом</span>
+          </a>
+          <a href="">
+            <span>Стандарт</span>
+          </a>
+          <a href="">
+            <span>Комфорт</span>
+          </a>
+          <a href="">
+            <span>Доп. услуги</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">F.A.Q</p>
+          <a href="">
+            <span>Как добраться</span>
+          </a>
+        </section>
+        <section>
+          <a href="" class="font-bold flex">Правила</a>
+        </section>
+        <section>
+          <a href="" class="font-bold">Забронировать</a>
+        </section>
+      </div>
+
+      <div class="text-sm grid grid-rows-2 mt-10">
+        <section class="space-y-4">
+          <div>
+            <p>Телефон:</p>
+            <span>+7 (924) 527-09-92</span>
+          </div>
+          <div>
+            <p>Почта:</p>
+            <span>admin@snitkocamp.ru</span>
+          </div>
+        </section>
+        <section class="flex flex-col space-y-6">
+          <div class="space-x-7">
+            <button><img src="./img/inst_logo.svg" alt=""></button>
+            <button><img src="./img/vk_logo.svg" alt=""></button>
+          </div>
+          <div class="space-x-7">
+            <button><img src="./img/teleg_logo.svg" alt=""></button>
+            <button><img src="./img/wa_logo.svg" alt=""></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p class="py-12 px-10 text-sm">
+      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
+    </p>
+  </footer>
+</body>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
+</html>
