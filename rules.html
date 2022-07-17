@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style type="text/tailwindcss">
+  @layer components {
+    .black_hole {
+        @apply bg-clifford;
+    }
+  }
+</style>
+
+<script src="tailwind.config.js" type="text/javascript"></script>
+
+<body class="font-['Arial']">
+  <div
+    class="absolute h-full w-full bg-[url('./img/mobile_others_header.svg')] bg-contain bg-no-repeat lg:bg-[url('./img/desktop_main_header.svg')] lg:bg-auto -z-10">
+  </div>
+  <header class="flex flex-row justify-between mx-10 pt-2">
+    <img src="./img/logo.svg">
+    <button>
+      <img src="./img/burger_menu.svg">
+    </button>
+  </header>
+  <main>
+    <h1 class="mt-4 text-xl text-center font-black text-white">Правила проживания</h1>
+    <div class="grid justify-items-center mb-14">
+        <ol class="w-72 text-sm mt-40 space-y-6">
+            <li>1. Свободный проход и проезд на территорию кемпинга возможен только после бронирования палатки или места для размещения своей палатки, либо по предварительному согласованию с администрацией. В иных случаях проход на частную территорию запрещён.</li>
+            <li>2. Нахождение на территории кемпинга с животными запрещено.</li>
+            <li>3. На территории кемпинга запрещено разводить костры, кроме специально отведённых для этого мест — костровое место или в мангале.</li>
+            <li>4. В нашем кемпинге необходимо уважать личное пространство других гостей. В связи с этим запрещено: громко слушать музыку, шуметь после 22:00, нецензурно выражаться, чрезмерно употреблять алкоголь.</li>
+            <li>5. Гостям необходимо соблюдать чистоту и порядок как на территории кемпинга, так и в палатках кемпинга «Стандарт», «Комфорт» и «Комфорт Люкс».</li>
+            <li>6. Гости должны самостоятельно следить за собственными детьми.</li>
+            <li>7. Запрещено взрывать фейерверки (пожароопасно), конфети, хлопушки и иную пиротехнику.</li>
+            <li>8. Внутри палаток категорически запрещено курить сигареты, электронные сигареты, кальяны и иные курительные смеси.</li>
+            <li>9. Убедительная к Вам просьба выключать все электроприборы и освещение при выходе из палатки.</li>
+            <li>10. Уважаемые гости, берегите природу, территорию и имущество шатров. При какой-либо поломке обязательно сообщите администратору и мы совместно решим данный вопрос.</li>
+            <li>11. Нахождение в палатке или шатре в кемпинге «Стандарт», «Комфорт» и «Комфорт Люкс» более 4-х человек запрещено. Если в течении дня к Вам захотят приехать гости, то необходимо заранее согласовать этот вопрос с администрацией.</li>
+        </ol>
+    </div>
+  </main>
+  <footer class="text-white bg-[#33813A]">
+    <div class="bg-white">
+      <img src="./img/footer_hat.svg" alt="" class="w-full">
+    </div>
+    <div class="grid grid-cols-2 grid-flow-col text-white">
+
+      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Главная</p>
+          <a href="">
+            <span>Фото</span>
+          </a>
+          <a href="">
+            <span>Видео</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Шатры</p>
+          <a href="">
+            <span>Эконом</span>
+          </a>
+          <a href="">
+            <span>Стандарт</span>
+          </a>
+          <a href="">
+            <span>Комфорт</span>
+          </a>
+          <a href="">
+            <span>Доп. услуги</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">F.A.Q</p>
+          <a href="">
+            <span>Как добраться</span>
+          </a>
+        </section>
+        <section>
+          <a href="" class="font-bold flex">Правила</a>
+        </section>
+        <section>
+          <a href="" class="font-bold">Забронировать</a>
+        </section>
+      </div>
+
+      <div class="text-sm grid grid-rows-2 mt-10">
+        <section class="space-y-4">
+          <div>
+            <p>Телефон:</p>
+            <span>+7 (924) 527-09-92</span>
+          </div>
+          <div>
+            <p>Почта:</p>
+            <span>admin@snitkocamp.ru</span>
+          </div>
+        </section>
+        <section class="flex flex-col space-y-6">
+          <div class="space-x-7">
+            <button><img src="./img/inst_logo.svg" alt=""></button>
+            <button><img src="./img/vk_logo.svg" alt=""></button>
+          </div>
+          <div class="space-x-7">
+            <button><img src="./img/teleg_logo.svg" alt=""></button>
+            <button><img src="./img/wa_logo.svg" alt=""></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p class="py-12 px-10 text-sm">
+      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
+    </p>
+  </footer>
+</body>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
+</html>
