@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style type="text/tailwindcss">
+  @layer components {
+    .black_hole {
+        @apply bg-clifford;
+    }
+  }
+</style>
+
+<script src="tailwind.config.js" type="text/javascript"></script>
+
+<body class="font-['Arial']">
+  <div
+    class="absolute h-full w-full bg-[url('./img/mobile_main_header.svg')] bg-cover lg:bg-[url('./img/desktop_main_header.svg')] lg:bg-auto -z-10">
+
+  </div>
+  <header class="flex flex-row justify-between mx-10 pt-2">
+    <img src="./img/logo.svg">
+    <button>
+      <img src="./img/burger_menu.svg">
+    </button>
+  </header>
+  <main>
+    <div>
+      <div class="text-center flex flex-col justify-between mt-4 text-white">
+        <h1 class="text-4xl font-black">Snitko.Camp</h1>
+        <p class="text-sm font-bold leading-4 mt-2">Семейный палаточный лагерь<br>в бухте Петрова</p>
+        <span class="text-xl font-bold mt-52">Добро пожаловать</span>
+        <p class="mt-3 text-center text-sm font-normal leading-4">Кемпинг семейного отдыха Snitko.Camp
+          работает в летний период на базе отдыха
+          «Бухта Петрова» с 15 июля по 31 августа
+          2022. Вы можете приехать как со своей
+          палаткой и оборудованием, так и
+          воспользоваться нашими вариантами
+          размещения. В лагере есть вся
+          инфраструктура для комфортного отдыха на
+          природе. Чистейшее лазурное Японское
+          море, белый песок и ограниченное
+          количество отдыхающих.
+        </p>
+      </div>
+    </div>
+    <section class="mt-5">
+      <p class="font-bold mb-5 text-center text-xl">
+        Все необходимые удобства
+      </p>
+      <ul class="w-max mx-auto space-y-7">
+        <li class="flex items-center">
+          <img class="mr-6" src="./img/electricity.svg">
+          <span>Электричество</span>
+        </li>
+        <li class="flex items-center">
+          <img class="mr-6" src="./img/shower.svg">
+          <span>Летний душ</span>
+        </li>
+        <li class="flex items-center">
+          <img class="mr-6" src="./img/freezer.svg">
+          <span>Холодильник</span>
+        </li>
+        <li class="flex items-center">
+          <img class="mr-6" src="./img/toilet.svg">
+          <span>Туалет</span>
+        </li>
+        <li class="flex items-center">
+          <img class="mr-6" src="./img/kitchen.svg">
+          <span>Кухонная зона</span>
+        </li>
+      </ul>
+    </section>
+    <div class="mt-20">
+      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+        <p class="text-xl font-bold w-72">Несколько вариантов размещения</p>
+        <img src="./img/camp_1.svg" alt="" class="w-72">
+        <p class="text-sm leading-4 w-72 font-normal">Привыкли к теплой и уютной квартире –
+          выберите вариант размещения
+          «Комфорт» и ни в чём себе
+          не отказывайте. Для самый смелых и
+          решительных – вариант «Эконом»
+          для максимального единения с природой.
+          А для тех, кто никак не может определиться,
+          подойдёт вариант размещения
+          «Стандарт».</p>
+        <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Посмотреть шатры</button>
+      </div>
+      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+        <p class="text-xl font-bold w-72">Вкусная еда</p>
+        <img src="./img/tasty_food.svg" alt="" class="w-72">
+        <p class="text-sm leading-4 w-72 font-normal">
+          В этом сезоне в Snitko.Camp работает
+          повар — вы можете заказать завтрак,
+          обед или ужин, а тем временем понежиться
+          на берегу волшебного моря или сходить на
+          экскурсию.</p>
+      </div>
+      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+        <p class="text-xl font-bold w-72">Тихий отдых</p>
+        <img src="./img/silent_rest.svg" alt="" class="w-72">
+        <p class="text-sm leading-4 w-72 font-normal">
+          Мы особо дорожим атмосферой места и
+          любим слушать вечернюю тишину. В
+          лагере и на всей базе запрещено после
+          22 часов нарушать «Режим тишины». Вы
+          сможете хорошо отдохнуть без громкой
+          музыки и буйных соседей. Только
+          природа, ваши близкие и вы.</p>
+        <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Посмотреть правила</button>
+      </div>
+    </div>
+  </main>
+  <footer class="text-white bg-[#33813A]">
+    <div class="bg-white">
+      <img src="./img/footer_hat.svg" alt="" class="w-full">
+    </div>
+    <div class="grid grid-cols-2 grid-flow-col text-white">
+
+      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Главная</p>
+          <a href="">
+            <span>Фото</span>
+          </a>
+          <a href="">
+            <span>Видео</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Шатры</p>
+          <a href="">
+            <span>Эконом</span>
+          </a>
+          <a href="">
+            <span>Стандарт</span>
+          </a>
+          <a href="">
+            <span>Комфорт</span>
+          </a>
+          <a href="">
+            <span>Доп. услуги</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">F.A.Q</p>
+          <a href="">
+            <span>Как добраться</span>
+          </a>
+        </section>
+        <section>
+          <a href="" class="font-bold flex">Правила</a>
+        </section>
+        <section>
+          <a href="" class="font-bold">Забронировать</a>
+        </section>
+      </div>
+
+      <div class="text-sm grid grid-rows-2 mt-10">
+        <section class="space-y-4">
+          <div>
+            <p>Телефон:</p>
+            <span>+7 (924) 527-09-92</span>
+          </div>
+          <div>
+            <p>Почта:</p>
+            <span>admin@snitkocamp.ru</span>
+          </div>
+        </section>
+        <section class="flex flex-col space-y-6">
+          <div class="space-x-7">
+            <button><img src="./img/inst_logo.svg" alt=""></button>
+            <button><img src="./img/vk_logo.svg" alt=""></button>
+          </div>
+          <div class="space-x-7">
+            <button><img src="./img/teleg_logo.svg" alt=""></button>
+            <button><img src="./img/wa_logo.svg" alt=""></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p class="py-12 px-10 text-sm">
+      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
+    </p>
+  </footer>
+</body>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
+</html>
