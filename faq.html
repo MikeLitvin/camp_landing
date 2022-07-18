@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<style type="text/tailwindcss">
+  @layer components {
+    .black_hole {
+        @apply bg-clifford;
+    }
+  }
+</style>
+
+<script src="tailwind.config.js" type="text/javascript"></script>
+
+<body class="font-['Arial']">
+  <header class="sticky w-full top-0 z-50">
+    <div class="absolute w-full flex flex-row justify-between mt-2 px-10">
+      <img src="./img/logo.svg">
+      <button>
+        <img src="./img/burger_menu.svg">
+      </button>
+    </div>
+  </header>
+  <main>
+    <div class="relative">
+      <img class="w-full -z-10" src="./img/mobile_others_header.svg" alt="" srcset="">
+      <div class="absolute top-0 w-full text-center text-white">
+        <h1 class="pt-20 text-xl text-center font-black text-white">Ответы на частые вопросы</h1>
+      </div>
+    </div>
+
+    </div>
+    <div class="grid justify-items-center grid-flow-row mb-14 space-y-5">
+
+      <section class="w-72">
+        <p class=" font-bold text-xl">Бытовые условия</p>
+        <ul class="mt-2 space-y-1">
+          <li>Организация питания</li>
+          <li>Работа повара</li>
+          <li>Летний душ</li>
+          <li>Туалеты</li>
+          <li>Мангал, дрова, костровые места</li>
+        </ul>
+      </section>
+
+      <section class="w-72">
+        <p class=" font-bold text-xl">Запреты бухты Петрова</p>
+        <ul class="mt-2 space-y-1">
+            <li>Режим тишины</li>
+            <li>Домашние животные</li>
+          </ul>
+      </section>
+
+      <section class="w-72">
+        <p class="font-bold text-xl">Со своей палаткой</p>
+        <ul class="mt-2 space-y-1">
+            <li>Есть ли доплаты за свои палатки?</li>
+            <li>Могу ли я выбрать место для размещения своей палатки?</li>
+            <li>Что такое лимиты на размещение?</li>
+          </ul>
+      </section>
+
+      <section class="w-72">
+        <p class=" font-bold text-xl">Палатки «Стандарт»</p>
+        <ul class="mt-2 space-y-1">
+            <li>Что внутри?</li>
+            <li>Что не входит в стоимость?</li>
+            <li>Где готовить еду?</li>
+          </ul>
+      </section>
+
+      <section class="w-72">
+        <p class=" font-bold text-xl">Палатки «Комфорт»</p>
+        <ul class="mt-2 space-y-1">
+            <li>Что внутри?</li>
+            <li>Что не входит в стоимость?</li>
+        </ul>
+      </section>
+
+      <section class="w-72 space-y-7">
+        <p class="font-bold text-xl w-72">Как добраться</p>
+        <img src="./img/map.svg" alt="">
+        <div class="text-sm space-y-4">
+        <p>
+            База отдыха «Бухта Петрова» находится в Лазовском районе. Расстояние от Владивостока 320 км.
+        </p>
+        <p>
+            Дорога преимущественно асфальтированная, но есть участки с грунтовой дорогой. Добраться можно
+            на любом автомобиле -  к нам спокойно доезжают на низких Prius или Fit, но важно соблюдать скоростной режим!
+        </p>
+        </div>
+        <button class="w-44 h-11 mx-auto text-white text-sm bg-[#33813A] rounded-[10px] font-bold block">
+          На карте
+        </button>
+      </section>
+
+      <section class="space-y-7">
+        <p class="font-bold text-xl w-72 text-center">
+            Остались вопросы?<br>
+            Мы всегда готовы помочь
+        </p>
+        <div class="flex flex-row justify-evenly">
+            <a><img src="./img/wa_green_logo.svg" alt=""></a>
+            <a><img src="./img/tg_green_logo.svg" alt=""></a>
+        </div>
+      </section>
+    </div>
+
+  </main>
+  <footer class="text-white bg-[#33813A]">
+    <div class="bg-white">
+      <img src="./img/footer_hat.svg" alt="" class="w-full">
+    </div>
+    <div class="grid grid-cols-2 grid-flow-col text-white">
+
+      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Главная</p>
+          <a href="">
+            <span>Фото</span>
+          </a>
+          <a href="">
+            <span>Видео</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">Шатры</p>
+          <a href="">
+            <span>Эконом</span>
+          </a>
+          <a href="">
+            <span>Стандарт</span>
+          </a>
+          <a href="">
+            <span>Комфорт</span>
+          </a>
+          <a href="">
+            <span>Доп. услуги</span>
+          </a>
+        </section>
+        <section class="flex flex-col space-y-1">
+          <p class="font-bold">F.A.Q</p>
+          <a href="">
+            <span>Как добраться</span>
+          </a>
+        </section>
+        <section>
+          <a href="" class="font-bold flex">Правила</a>
+        </section>
+        <section>
+          <a href="" class="font-bold">Забронировать</a>
+        </section>
+      </div>
+
+      <div class="text-sm grid grid-rows-2 mt-10">
+        <section class="space-y-4">
+          <div>
+            <p>Телефон:</p>
+            <span>+7 (924) 527-09-92</span>
+          </div>
+          <div>
+            <p>Почта:</p>
+            <span>admin@snitkocamp.ru</span>
+          </div>
+        </section>
+        <section class="flex flex-col space-y-6">
+          <div class="space-x-7">
+            <button><img src="./img/inst_logo.svg" alt=""></button>
+            <button><img src="./img/vk_logo.svg" alt=""></button>
+          </div>
+          <div class="space-x-7">
+            <button><img src="./img/teleg_logo.svg" alt=""></button>
+            <button><img src="./img/wa_logo.svg" alt=""></button>
+          </div>
+        </section>
+      </div>
+    </div>
+    <p class="py-12 px-10 text-sm">
+      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
+    </p>
+  </footer>
+</body>
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+        }
+      }
+    }
+  }
+</script>
+
+</html>
