@@ -19,70 +19,110 @@
 <script src="tailwind.config.js" type="text/javascript"></script>
 
 <body class="font-['Arial']">
-  <header class="sticky w-full top-0 z-50">
-    <div class="absolute w-full flex flex-row justify-between mt-2 px-10">
-      <img src="./img/logo.svg">
-      <button>
-        <img src="./img/burger_menu.svg">
+  <header class="sticky container w-full top-0 lg:mx-auto z-50">
+    <div class="absolute w-full flex flex-row justify-between items-center px-10 mt-2">
+      <img class="w-10 h-10 lg:w-12 lg:h-12 " src="./img/logo.svg">
+      <button class="lg:hidden">
+        <img src="./img/burger_menu.svg" />
       </button>
+      <ul class="hidden lg:block text-white font-bold space-x-24">
+        <li class="inline-block">Главная</li>
+        <li class="inline-block">Шатры</li>
+        <li class="inline-block">F.A.Q.</li>
+        <li class="inline-block">Правила</li>
+        <li class="inline-block">Забранировать</li>
+      </ul>
     </div>
   </header>
   <main>
     <div class="relative">
-      <img class="w-full -z-10" src="./img/mobile_main_header.svg" alt="" srcset="">
+      <img class="lg:hidden w-full -z-10" src="./img/mobile_main_header.svg" alt="" srcset="" />
+      <img class="hidden lg:block w-full -z-10" src="./img/desktop_main_header.svg" alt="" srcset="" />
       <div class="absolute top-0 w-full text-center text-white">
-        <h1 class="pt-20 text-4xl font-black">Snitko.Camp</h1>
-        <p class="text-sm font-bold leading-4 mt-2">Семейный палаточный лагерь<br>в бухте Петрова</p>
+        <h1 class="pt-20 lg:pt-44 text-4xl lg:text-[80px] font-black">Snitko.Camp</h1>
+        <p class="text-sm lg:text-3xl font-bold leading-4 mt-2 lg:mt-8">Семейный палаточный лагерь<br>в бухте Петрова
+        </p>
       </div>
     </div>
-    <div class="flex flex-col justify-between  bg-gradient-to-b from-[#3778ff] to-transparent text-center text-white">
-      <span class="text-xl font-bold">Добро пожаловать</span>
-      <p class="mx-7 mt-3 pb-28 text-center text-sm leading-4">
-        Кемпинг семейного отдыха Snitko.Camp
-        работает в летний период на базе отдыха
-        «Бухта Петрова» с 15 июля по 31 августа
-        2022. Вы можете приехать как со своей
-        палаткой и оборудованием, так и
-        воспользоваться нашими вариантами
-        размещения. В лагере есть вся
-        инфраструктура для комфортного отдыха на
-        природе. Чистейшее лазурное Японское
-        море, белый песок и ограниченное
-        количество отдыхающих.
-      </p>
+    <div class="bg-gradient-to-b from-[#3778ff] lg:from-[#689bf4] to-transparent">
+      <div class="container mx-auto flex flex-col justify-between text-center text-white">
+        <span class="text-xl lg:text-4xl font-bold">Добро пожаловать</span>
+        <p class="mx-7 mt-3 pb-28 text-center text-sm lg:text-2xl leading-4 lg:leading-normal">
+          Кемпинг семейного отдыха Snitko.Camp
+          работает в летний период на базе отдыха
+          «Бухта Петрова» с 15 июля по 31 августа
+          2022. Вы можете приехать как со своей
+          палаткой и оборудованием, так и
+          воспользоваться нашими вариантами
+          размещения. В лагере есть вся
+          инфраструктура для комфортного отдыха на
+          природе. Чистейшее лазурное Японское
+          море, белый песок и ограниченное
+          количество отдыхающих.
+        </p>
+      </div>
+      <section class="hidden lg:flex flex-wrap mx-auto text-xl mt-20 space-x-36">
+        <p class="w-full mb-5 text-center text-xl lg:text-4xl font-bold">
+          Все необходимые удобства
+        </p>
+        <div class="grid justify-items-center space-y-7">
+          <img class="w-20 h-20" src="./img/electricity.svg" />
+          <p class="">Электричество</p>
+        </div>
+        <div class="grid justify-items-center space-y-7">
+          <img class="w-20 h-20" src="./img/shower.svg" />
+          <p class="">Летний душ</p>
+        </div>
+        <div class="grid justify-items-center space-y-7">
+          <img class="w-20 h-20" src="./img/freezer.svg" />
+          <p class="">Холодильник</p>
+        </div>
+        <div class="grid justify-items-center space-y-7">
+          <img class="w-20 h-20" src="./img/toilet.svg" />
+          <p class="">Туалет</p>
+        </div>
+        <div class="grid justify-items-center space-y-7">
+          <img class="w-20 h-20" src="./img/kitchen.svg" />
+          <p class="">Кухонная зона</p>
+        </div>
+      </section>
     </div>
-    <section class="mt-3">
+    <section class="lg:hidden mt-3">
       <p class="font-bold mb-5 text-center text-xl">
         Все необходимые удобства
       </p>
       <ul class="w-max mx-auto space-y-7">
         <li class="flex items-center">
-          <img class="mr-6" src="./img/electricity.svg">
+          <img class="mr-6" src="./img/electricity.svg" />
           <span>Электричество</span>
         </li>
         <li class="flex items-center">
-          <img class="mr-6" src="./img/shower.svg">
+          <img class="mr-6" src="./img/shower.svg" />
           <span>Летний душ</span>
         </li>
         <li class="flex items-center">
-          <img class="mr-6" src="./img/freezer.svg">
+          <img class="mr-6" src="./img/freezer.svg" />
           <span>Холодильник</span>
         </li>
         <li class="flex items-center">
-          <img class="mr-6" src="./img/toilet.svg">
+          <img class="mr-6" src="./img/toilet.svg" />
           <span>Туалет</span>
         </li>
         <li class="flex items-center">
-          <img class="mr-6" src="./img/kitchen.svg">
+          <img class="mr-6" src="./img/kitchen.svg" />
           <span>Кухонная зона</span>
         </li>
       </ul>
     </section>
-    <div class="mt-20">
-      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
-        <p class="text-xl font-bold w-72">Несколько вариантов размещения</p>
-        <img src="./img/camp_1.svg" alt="" class="w-72">
-        <p class="text-sm leading-4 w-72 font-normal">Привыкли к теплой и уютной квартире –
+    <section class="mt-20">
+
+      <div class="grid auto-rows-auto lg:grid-cols-2 mb-10 gap-y-4 justify-items-center lg:mx-auto lg:w-max lg:space-x-10">
+        <p class="lg:col-start-2 w-72 lg:w-auto text-xl lg:text-4xl font-bold lg:justify-self-center">
+          Несколько вариантов размещения
+        </p>
+        <img src="./img/camp_1.svg" alt="" class="w-72 lg:w-[680px] lg:row-span-5" />
+        <p class="lg:justify-self-start w-72 text-sm lg:text-xl leading-4 font-normal">
+          Привыкли к теплой и уютной квартире –
           выберите вариант размещения
           «Комфорт» и ни в чём себе
           не отказывайте. Для самый смелых и
@@ -91,11 +131,15 @@
           А для тех, кто никак не может определиться,
           подойдёт вариант размещения
           «Стандарт».</p>
-        <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Посмотреть шатры</button>
+        <button
+          class="lg:justify-self-end lg:self-end text-white text-sm lg:text-2xl font-bold bg-[#33813A] rounded-[10px] w-44 lg:w-72 h-11 lg:h-16 lg:col-start-2">
+          Посмотреть шатры
+        </button>
       </div>
+
       <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
         <p class="text-xl font-bold w-72">Вкусная еда</p>
-        <img src="./img/tasty_food.svg" alt="" class="w-72">
+        <img src="./img/tasty_food.svg" alt="" class="w-72" />
         <p class="text-sm leading-4 w-72 font-normal">
           В этом сезоне в Snitko.Camp работает
           повар — вы можете заказать завтрак,
@@ -105,7 +149,7 @@
       </div>
       <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
         <p class="text-xl font-bold w-72">Тихий отдых</p>
-        <img src="./img/silent_rest.svg" alt="" class="w-72">
+        <img src="./img/silent_rest.svg" alt="" class="w-72" />
         <p class="text-sm leading-4 w-72 font-normal">
           Мы особо дорожим атмосферой места и
           любим слушать вечернюю тишину. В
@@ -116,15 +160,16 @@
           природа, ваши близкие и вы.</p>
         <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Посмотреть правила</button>
       </div>
-    </div>
+    </section>
   </main>
+
   <footer class="text-white bg-[#33813A]">
     <div class="bg-white">
-      <img src="./img/footer_hat.svg" alt="" class="w-full">
+      <img src="./img/footer_hat.svg" alt="" class="w-full lg:hidden" />
+      <img src="./img/desktop_footer_hat.svg" alt="" class="hidden lg:block">
     </div>
-    <div class="grid grid-cols-2 grid-flow-col text-white">
-
-      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+    <div class="container grid grid-cols-2 grid-flow-col lg:flex justify-center justify-between text-white ml-10 lg:mx-auto mt-10">
+      <div class="grid grid-flow-row lg:grid-flow-col gap-y-2 text-xs lg:text-lg lg:space-x-20">
         <section class="flex flex-col space-y-1">
           <p class="font-bold">Главная</p>
           <a href="">
@@ -163,7 +208,7 @@
         </section>
       </div>
 
-      <div class="text-sm grid grid-rows-2 mt-10">
+      <div class="grid grid-rows-2 lg:flex lg:space-x-8 text-sm lg:text-lg">
         <section class="space-y-4">
           <div>
             <p>Телефон:</p>
@@ -175,18 +220,18 @@
           </div>
         </section>
         <section class="flex flex-col space-y-6">
-          <div class="space-x-7">
-            <button><img src="./img/inst_logo.svg" alt=""></button>
-            <button><img src="./img/vk_logo.svg" alt=""></button>
+          <div class="space-x-7 lg:space-x-11">
+            <button><img src="./img/inst_logo.svg" alt="" class="lg:w-12"/></button>
+            <button><img src="./img/vk_logo.svg" alt="" class="lg:w-12"/></button>
           </div>
-          <div class="space-x-7">
-            <button><img src="./img/teleg_logo.svg" alt=""></button>
-            <button><img src="./img/wa_logo.svg" alt=""></button>
+          <div class="space-x-7 lg:space-x-11">
+            <button><img src="./img/teleg_logo.svg" alt="" class="lg:w-12"/></button>
+            <button><img src="./img/wa_logo.svg" alt="" class="lg:w-12"/></button>
           </div>
         </section>
       </div>
     </div>
-    <p class="py-12 px-10 text-sm">
+    <p class="py-12 px-10 text-sm lg:text-lg">
       &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
     </p>
   </footer>
