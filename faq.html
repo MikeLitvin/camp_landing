@@ -19,12 +19,21 @@
 <script src="tailwind.config.js" type="text/javascript"></script>
 
 <body class="font-['Arial']">
-  <header class="sticky w-full top-0 z-50">
-    <div class="absolute w-full flex flex-row justify-between mt-2 px-10">
-      <img class="w-10 h-10 lg:w-12 lg:h-12" src="./img/logo.svg">
-      <button>
+  <header class="sticky top-0 lg:mx-auto z-50">
+    <div
+      class="absolute w-full flex flex-row justify-between items-center px-10 mt-2"
+    >
+      <img class="w-10 h-10 lg:w-12 lg:h-12" src="./img/logo.svg" />
+      <button class="lg:hidden">
         <img src="./img/burger_menu.svg" />
       </button>
+      <ul class="hidden lg:block text-white font-bold space-x-24">
+        <li class="inline-block">Главная</li>
+        <li class="inline-block">Шатры</li>
+        <li class="inline-block">F.A.Q.</li>
+        <li class="inline-block">Правила</li>
+        <li class="inline-block">Забранировать</li>
+      </ul>
     </div>
   </header>
   <main>
@@ -115,11 +124,19 @@
   </main>
   <footer class="text-white bg-[#33813A]">
     <div class="bg-white">
-      <img src="./img/footer_hat.svg" alt="" class="w-full" />
+      <img src="./img/footer_hat.svg" alt="" class="lg:hidden w-full" />
+      <img
+        src="./img/desktop_footer_hat.svg"
+        alt=""
+        class="hidden lg:block w-full"
+      />
     </div>
-    <div class="grid grid-cols-2 grid-flow-col text-white">
-
-      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+    <div
+      class="flex flex-wrap justify-between lg:justify-center gap-y-4 lg:gap-x-20 mt-10 px-10 text-white"
+    >
+      <div
+        class="flex flex-col md:flex-row gap-4 text-xs lg:text-lg lg:space-x-20"
+      >
         <section class="flex flex-col space-y-1">
           <p class="font-bold">Главная</p>
           <a href="">
@@ -157,9 +174,10 @@
           <a href="" class="font-bold">Забронировать</a>
         </section>
       </div>
-
-      <div class="text-sm grid grid-rows-2 mt-10">
-        <section class="space-y-4">
+      <div
+        class="flex flex-wrap flex-col lg:flex-row lg:space-x-6 text-sm lg:text-lg"
+        >
+        <section class="space-y-4 mb-5">
           <div>
             <p>Телефон:</p>
             <span>+7 (924) 527-09-92</span>
@@ -169,20 +187,29 @@
             <span>admin@snitkocamp.ru</span>
           </div>
         </section>
-        <section class="flex flex-col space-y-6">
-          <div class="space-x-7">
-            <button><img src="./img/inst_logo.svg" alt="" /></button>
-            <button><img src="./img/vk_logo.svg" alt="" /></button>
+        <section class="grid grid-rows-2 space-y-3 lg:space-y-0">
+          <div class="space-x-7 lg:space-x-11">
+            <button>
+              <img src="./img/inst_logo.svg" alt="" class="lg:w-12" />
+            </button>
+            <button>
+              <img src="./img/vk_logo.svg" alt="" class="lg:w-12" />
+            </button>
           </div>
-          <div class="space-x-7">
-            <button><img src="./img/teleg_logo.svg" alt="" /></button>
-            <button><img src="./img/wa_logo.svg" alt="" /></button>
+          <div class="space-x-7 lg:space-x-11">
+            <button>
+              <img src="./img/teleg_logo.svg" alt="" class="lg:w-12" />
+            </button>
+            <button>
+              <img src="./img/wa_logo.svg" alt="" class="lg:w-12" />
+            </button>
           </div>
         </section>
       </div>
     </div>
-    <p class="py-12 px-10 text-sm">
-      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
+    <p class="pt-12 pb-3 px-10 text-sm lg:text-lg text-left lg:text-center">
+      &copy; 2015-2022 — Snitko.camp <br class="md:hidden" />
+      семейный лагерь в Бухте Петрова.
     </p>
   </footer>
 </body>
