@@ -1,252 +1,275 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<style type="text/tailwindcss">
-  @layer components {
-    .black_hole {
+  <style type="text/tailwindcss">
+    @layer components {
+      .black_hole {
         @apply bg-clifford;
-    }
-  }
-</style>
-
-<script src="tailwind.config.js" type="text/javascript"></script>
-
-<body class="font-['Arial']">
-  <header class="sticky container w-full top-0 lg:mx-auto z-50">
-    <div class="absolute w-full flex flex-row justify-between items-center px-10 mt-2">
-      <img class="w-10 h-10 lg:w-12 lg:h-12 " src="./img/logo.svg">
-      <button class="lg:hidden">
-        <img src="./img/burger_menu.svg" />
-      </button>
-      <ul class="hidden lg:block text-white font-bold space-x-24">
-        <li class="inline-block">Главная</li>
-        <li class="inline-block">Шатры</li>
-        <li class="inline-block">F.A.Q.</li>
-        <li class="inline-block">Правила</li>
-        <li class="inline-block">Забранировать</li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="relative">
-      <img class="lg:hidden w-full -z-10" src="./img/mobile_main_header.svg" alt="" srcset="" />
-      <img class="hidden lg:block w-full -z-10" src="./img/desktop_main_header.svg" alt="" srcset="" />
-      <div class="absolute top-0 w-full text-center text-white">
-        <h1 class="pt-20 lg:pt-44 text-4xl lg:text-[80px] font-black">Snitko.Camp</h1>
-        <p class="text-sm lg:text-3xl font-bold leading-4 mt-2 lg:mt-8">Семейный палаточный лагерь<br>в бухте Петрова
-        </p>
-      </div>
-    </div>
-    <div class="bg-gradient-to-b from-[#3778ff] lg:from-[#689bf4] to-transparent">
-      <div class="container mx-auto flex flex-col justify-between text-center text-white">
-        <span class="text-xl lg:text-4xl font-bold">Добро пожаловать</span>
-        <p class="mx-7 mt-3 pb-28 text-center text-sm lg:text-2xl leading-4 lg:leading-normal">
-          Кемпинг семейного отдыха Snitko.Camp
-          работает в летний период на базе отдыха
-          «Бухта Петрова» с 15 июля по 31 августа
-          2022. Вы можете приехать как со своей
-          палаткой и оборудованием, так и
-          воспользоваться нашими вариантами
-          размещения. В лагере есть вся
-          инфраструктура для комфортного отдыха на
-          природе. Чистейшее лазурное Японское
-          море, белый песок и ограниченное
-          количество отдыхающих.
-        </p>
-      </div>
-      <section class="hidden lg:flex flex-wrap mx-auto text-xl mt-20 space-x-36">
-        <p class="w-full mb-5 text-center text-xl lg:text-4xl font-bold">
-          Все необходимые удобства
-        </p>
-        <div class="grid justify-items-center space-y-7">
-          <img class="w-20 h-20" src="./img/electricity.svg" />
-          <p class="">Электричество</p>
-        </div>
-        <div class="grid justify-items-center space-y-7">
-          <img class="w-20 h-20" src="./img/shower.svg" />
-          <p class="">Летний душ</p>
-        </div>
-        <div class="grid justify-items-center space-y-7">
-          <img class="w-20 h-20" src="./img/freezer.svg" />
-          <p class="">Холодильник</p>
-        </div>
-        <div class="grid justify-items-center space-y-7">
-          <img class="w-20 h-20" src="./img/toilet.svg" />
-          <p class="">Туалет</p>
-        </div>
-        <div class="grid justify-items-center space-y-7">
-          <img class="w-20 h-20" src="./img/kitchen.svg" />
-          <p class="">Кухонная зона</p>
-        </div>
-      </section>
-    </div>
-    <section class="lg:hidden mt-3">
-      <p class="font-bold mb-5 text-center text-xl">
-        Все необходимые удобства
-      </p>
-      <ul class="w-max mx-auto space-y-7">
-        <li class="flex items-center">
-          <img class="mr-6" src="./img/electricity.svg" />
-          <span>Электричество</span>
-        </li>
-        <li class="flex items-center">
-          <img class="mr-6" src="./img/shower.svg" />
-          <span>Летний душ</span>
-        </li>
-        <li class="flex items-center">
-          <img class="mr-6" src="./img/freezer.svg" />
-          <span>Холодильник</span>
-        </li>
-        <li class="flex items-center">
-          <img class="mr-6" src="./img/toilet.svg" />
-          <span>Туалет</span>
-        </li>
-        <li class="flex items-center">
-          <img class="mr-6" src="./img/kitchen.svg" />
-          <span>Кухонная зона</span>
-        </li>
-      </ul>
-    </section>
-    <section class="mt-20">
-
-      <div class="grid auto-rows-auto lg:grid-cols-2 mb-10 gap-y-4 justify-items-center lg:mx-auto lg:w-max lg:space-x-10">
-        <p class="lg:col-start-2 w-72 lg:w-auto text-xl lg:text-4xl font-bold lg:justify-self-center">
-          Несколько вариантов размещения
-        </p>
-        <img src="./img/camp_1.svg" alt="" class="w-72 lg:w-[680px] lg:row-span-5" />
-        <p class="lg:justify-self-start w-72 text-sm lg:text-xl leading-4 font-normal">
-          Привыкли к теплой и уютной квартире –
-          выберите вариант размещения
-          «Комфорт» и ни в чём себе
-          не отказывайте. Для самый смелых и
-          решительных – вариант «Эконом»
-          для максимального единения с природой.
-          А для тех, кто никак не может определиться,
-          подойдёт вариант размещения
-          «Стандарт».</p>
-        <button
-          class="lg:justify-self-end lg:self-end text-white text-sm lg:text-2xl font-bold bg-[#33813A] rounded-[10px] w-44 lg:w-72 h-11 lg:h-16 lg:col-start-2">
-          Посмотреть шатры
-        </button>
-      </div>
-
-      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
-        <p class="text-xl font-bold w-72">Вкусная еда</p>
-        <img src="./img/tasty_food.svg" alt="" class="w-72" />
-        <p class="text-sm leading-4 w-72 font-normal">
-          В этом сезоне в Snitko.Camp работает
-          повар — вы можете заказать завтрак,
-          обед или ужин, а тем временем понежиться
-          на берегу волшебного моря или сходить на
-          экскурсию.</p>
-      </div>
-      <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
-        <p class="text-xl font-bold w-72">Тихий отдых</p>
-        <img src="./img/silent_rest.svg" alt="" class="w-72" />
-        <p class="text-sm leading-4 w-72 font-normal">
-          Мы особо дорожим атмосферой места и
-          любим слушать вечернюю тишину. В
-          лагере и на всей базе запрещено после
-          22 часов нарушать «Режим тишины». Вы
-          сможете хорошо отдохнуть без громкой
-          музыки и буйных соседей. Только
-          природа, ваши близкие и вы.</p>
-        <button class="text-white text-sm bg-[#33813A] rounded-[10px] w-44 h-11 font-bold">Посмотреть правила</button>
-      </div>
-    </section>
-  </main>
-
-  <footer class="text-white bg-[#33813A]">
-    <div class="bg-white">
-      <img src="./img/footer_hat.svg" alt="" class="w-full lg:hidden" />
-      <img src="./img/desktop_footer_hat.svg" alt="" class="hidden lg:block">
-    </div>
-    <div class="container grid grid-cols-2 grid-flow-col lg:flex justify-center justify-between text-white ml-10 lg:mx-auto mt-10">
-      <div class="grid grid-flow-row lg:grid-flow-col gap-y-2 text-xs lg:text-lg lg:space-x-20">
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">Главная</p>
-          <a href="">
-            <span>Фото</span>
-          </a>
-          <a href="">
-            <span>Видео</span>
-          </a>
-        </section>
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">Шатры</p>
-          <a href="">
-            <span>Эконом</span>
-          </a>
-          <a href="">
-            <span>Стандарт</span>
-          </a>
-          <a href="">
-            <span>Комфорт</span>
-          </a>
-          <a href="">
-            <span>Доп. услуги</span>
-          </a>
-        </section>
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">F.A.Q</p>
-          <a href="">
-            <span>Как добраться</span>
-          </a>
-        </section>
-        <section>
-          <a href="" class="font-bold flex">Правила</a>
-        </section>
-        <section>
-          <a href="" class="font-bold">Забронировать</a>
-        </section>
-      </div>
-
-      <div class="grid grid-rows-2 lg:flex lg:space-x-8 text-sm lg:text-lg">
-        <section class="space-y-4">
-          <div>
-            <p>Телефон:</p>
-            <span>+7 (924) 527-09-92</span>
-          </div>
-          <div>
-            <p>Почта:</p>
-            <span>admin@snitkocamp.ru</span>
-          </div>
-        </section>
-        <section class="flex flex-col space-y-6">
-          <div class="space-x-7 lg:space-x-11">
-            <button><img src="./img/inst_logo.svg" alt="" class="lg:w-12"/></button>
-            <button><img src="./img/vk_logo.svg" alt="" class="lg:w-12"/></button>
-          </div>
-          <div class="space-x-7 lg:space-x-11">
-            <button><img src="./img/teleg_logo.svg" alt="" class="lg:w-12"/></button>
-            <button><img src="./img/wa_logo.svg" alt="" class="lg:w-12"/></button>
-          </div>
-        </section>
-      </div>
-    </div>
-    <p class="py-12 px-10 text-sm lg:text-lg">
-      &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
-    </p>
-  </footer>
-</body>
-
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        }
       }
     }
-  }
-</script>
+  </style>
 
+  <body class="font-['Arial']">
+    <header class="sticky top-0 lg:mx-auto z-50">
+      <div
+        class="absolute w-full flex flex-row justify-between items-center px-10 mt-2"
+      >
+        <img class="w-10 h-10 lg:w-12 lg:h-12" src="./img/logo.svg" />
+        <button class="lg:hidden">
+          <img src="./img/burger_menu.svg" />
+        </button>
+        <ul class="hidden lg:block text-white font-bold space-x-24">
+          <li class="inline-block">Главная</li>
+          <li class="inline-block">Шатры</li>
+          <li class="inline-block">F.A.Q.</li>
+          <li class="inline-block">Правила</li>
+          <li class="inline-block">Забранировать</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="relative">
+        <img
+          class="lg:hidden w-full -z-10"
+          src="./img/mobile_main_header.svg"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="hidden lg:block w-full -z-10"
+          src="./img/desktop_main_header.svg"
+          alt=""
+          srcset=""
+        />
+        <div class="absolute top-0 w-full text-center text-white">
+          <h1 class="pt-20 lg:pt-44 text-4xl lg:text-[80px] font-black">
+            Snitko.Camp
+          </h1>
+          <p class="text-sm lg:text-3xl font-bold leading-4 mt-2 lg:mt-8">
+            Семейный палаточный лагерь<br />в бухте Петрова
+          </p>
+        </div>
+      </div>
+      <div
+        class="bg-gradient-to-b from-[#3778ff] lg:from-[#689bf4] to-transparent"
+      >
+        <div
+          class="container mx-auto flex flex-col justify-between text-center text-white"
+        >
+          <span class="text-xl lg:text-4xl font-bold">Добро пожаловать</span>
+          <p
+            class="mx-7 mt-3 pb-28 text-center text-sm lg:text-2xl leading-4 lg:leading-normal"
+          >
+            Кемпинг семейного отдыха Snitko.Camp работает в летний период на
+            базе отдыха «Бухта Петрова» с 15 июля по 31 августа 2022. Вы можете
+            приехать как со своей палаткой и оборудованием, так и
+            воспользоваться нашими вариантами размещения. В лагере есть вся
+            инфраструктура для комфортного отдыха на природе. Чистейшее лазурное
+            Японское море, белый песок и ограниченное количество отдыхающих.
+          </p>
+        </div>
+        <p class="mb-5 font-bold text-center text-xl lg:text-4xl">
+          Все необходимые удобства
+        </p>
+        <section
+          class="hidden lg:flex justify-center flex-wrap mx-auto text-xl mt-20 gap-x-36 gap-y-4"
+        >
+          <div class="grid justify-items-center space-y-7">
+            <img class="w-20 h-20" src="./img/electricity.svg" />
+            <p class="">Электричество</p>
+          </div>
+          <div class="grid justify-items-center space-y-7">
+            <img class="w-20 h-20" src="./img/shower.svg" />
+            <p class="">Летний душ</p>
+          </div>
+          <div class="grid justify-items-center space-y-7">
+            <img class="w-20 h-20" src="./img/freezer.svg" />
+            <p class="">Холодильник</p>
+          </div>
+          <div class="grid justify-items-center space-y-7">
+            <img class="w-20 h-20" src="./img/toilet.svg" />
+            <p class="">Туалет</p>
+          </div>
+          <div class="grid justify-items-center space-y-7">
+            <img class="w-20 h-20" src="./img/kitchen.svg" />
+            <p class="">Кухонная зона</p>
+          </div>
+        </section>
+      </div>
+      <section class="lg:hidden mt-3">
+        <ul class="w-max mx-auto space-y-7">
+          <li class="flex items-center">
+            <img class="mr-6" src="./img/electricity.svg" />
+            <span>Электричество</span>
+          </li>
+          <li class="flex items-center">
+            <img class="mr-6" src="./img/shower.svg" />
+            <span>Летний душ</span>
+          </li>
+          <li class="flex items-center">
+            <img class="mr-6" src="./img/freezer.svg" />
+            <span>Холодильник</span>
+          </li>
+          <li class="flex items-center">
+            <img class="mr-6" src="./img/toilet.svg" />
+            <span>Туалет</span>
+          </li>
+          <li class="flex items-center">
+            <img class="mr-6" src="./img/kitchen.svg" />
+            <span>Кухонная зона</span>
+          </li>
+        </ul>
+      </section>
+      <section class="mt-20">
+        <div
+          class="grid auto-rows-auto lg:grid-cols-2 mb-10 gap-y-4 justify-items-center lg:mx-auto lg:w-max"
+        >
+          <p
+            class="w-72 lg:w-[450px] lg:col-start-2 lg:row-start-1 text-xl lg:text-4xl font-bold"
+          >
+            Несколько вариантов размещения
+          </p>
+          <div class="w-72 lg:w-[680px] lg:row-span-4 lg:col-start-1">
+            <img class="w-full" src="./img/camp_1.svg" alt="" />
+          </div>
+          <p
+            class="w-72 lg:w-[450px] lg:col-start-2 lg:row-start-2 text-sm lg:text-xl leading-4 font-normal"
+          >
+            Привыкли к теплой и уютной квартире – выберите вариант размещения
+            «Комфорт» и ни в чём себе не отказывайте. Для самый смелых и
+            решительных – вариант «Эконом» для максимального единения с
+            природой. А для тех, кто никак не может определиться, подойдёт
+            вариант размещения «Стандарт».
+          </p>
+          <button
+            class="text-white text-sm lg:text-2xl font-bold bg-[#33813A] rounded-lg w-44 lg:w-72 h-11 lg:h-16 lg:col-end-3 lg:row-end-5 lg:justify-self-end"
+          >
+            Посмотреть шатры
+          </button>
+        </div>
+
+        <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+          <p class="text-xl font-bold w-72">Вкусная еда</p>
+          <img src="./img/tasty_food.svg" alt="" class="w-72" />
+          <p class="text-sm leading-4 w-72 font-normal">
+            В этом сезоне в Snitko.Camp работает повар — вы можете заказать
+            завтрак, обед или ужин, а тем временем понежиться на берегу
+            волшебного моря или сходить на экскурсию.
+          </p>
+        </div>
+        <div class="grid auto-rows-auto mb-10 gap-y-4 justify-items-center">
+          <p class="text-xl font-bold w-72">Тихий отдых</p>
+          <img src="./img/silent_rest.svg" alt="" class="w-72" />
+          <p class="text-sm leading-4 w-72 font-normal">
+            Мы особо дорожим атмосферой места и любим слушать вечернюю тишину. В
+            лагере и на всей базе запрещено после 22 часов нарушать «Режим
+            тишины». Вы сможете хорошо отдохнуть без громкой музыки и буйных
+            соседей. Только природа, ваши близкие и вы.
+          </p>
+          <button
+            class="text-white text-sm bg-[#33813A] rounded-lg w-44 h-11 font-bold"
+          >
+            Посмотреть правила
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-white bg-[#33813A]">
+      <div class="bg-white">
+        <img src="./img/footer_hat.svg" alt="" class="lg:hidden w-full" />
+        <img
+          src="./img/desktop_footer_hat.svg"
+          alt=""
+          class="hidden lg:block w-full"
+        />
+      </div>
+      <div
+        class="flex flex-wrap justify-between lg:justify-center gap-y-4 lg:gap-x-20 mt-10 px-10 text-white"
+      >
+        <div
+          class="flex flex-col md:flex-row gap-4 text-xs lg:text-lg lg:space-x-20"
+        >
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">Главная</p>
+            <a href="">
+              <span>Фото</span>
+            </a>
+            <a href="">
+              <span>Видео</span>
+            </a>
+          </section>
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">Шатры</p>
+            <a href="">
+              <span>Эконом</span>
+            </a>
+            <a href="">
+              <span>Стандарт</span>
+            </a>
+            <a href="">
+              <span>Комфорт</span>
+            </a>
+            <a href="">
+              <span>Доп. услуги</span>
+            </a>
+          </section>
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">F.A.Q</p>
+            <a href="">
+              <span>Как добраться</span>
+            </a>
+          </section>
+          <section>
+            <a href="" class="font-bold flex">Правила</a>
+          </section>
+          <section>
+            <a href="" class="font-bold">Забронировать</a>
+          </section>
+        </div>
+        <div
+          class="flex flex-wrap flex-col lg:flex-row lg:space-x-6 text-sm lg:text-lg"
+        >
+          <section class="space-y-4 mb-5">
+            <div>
+              <p>Телефон:</p>
+              <span>+7 (924) 527-09-92</span>
+            </div>
+            <div>
+              <p>Почта:</p>
+              <span>admin@snitkocamp.ru</span>
+            </div>
+          </section>
+          <section class="grid grid-rows-2 space-y-3 lg:space-y-0">
+            <div class="space-x-7 lg:space-x-11">
+              <button>
+                <img src="./img/inst_logo.svg" alt="" class="lg:w-12" />
+              </button>
+              <button>
+                <img src="./img/vk_logo.svg" alt="" class="lg:w-12" />
+              </button>
+            </div>
+            <div class="space-x-7 lg:space-x-11">
+              <button>
+                <img src="./img/teleg_logo.svg" alt="" class="lg:w-12" />
+              </button>
+              <button>
+                <img src="./img/wa_logo.svg" alt="" class="lg:w-12" />
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+      <p class="pt-12 pb-3 px-10 text-sm lg:text-lg text-left lg:text-center">
+        &copy; 2015-2022 — Snitko.camp <br class="md:hidden" />
+        семейный лагерь в Бухте Петрова.
+      </p>
+    </footer>
+  </body>
 </html>
