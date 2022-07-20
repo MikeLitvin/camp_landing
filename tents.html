@@ -144,11 +144,11 @@
   </main>
   <footer class="text-white bg-[#33813A]">
     <div class="bg-white">
-      <img src="./img/footer_hat.svg" alt="" class="w-full" />
+      <img src="./img/footer_hat.svg" alt="" class="w-full lg:hidden" />
+      <img src="./img/desktop_footer_hat.svg" alt="" class="hidden lg:block">
     </div>
-    <div class="grid grid-cols-2 grid-flow-col text-white">
-
-      <div class="grid grid-flow-row gap-y-2 text-xs ml-10 mt-10">
+    <div class="container grid grid-cols-2 grid-flow-col lg:flex justify-center justify-between text-white ml-10 lg:mx-auto mt-10">
+      <div class="grid grid-flow-row lg:grid-flow-col gap-y-2 text-xs lg:text-lg lg:space-x-20">
         <section class="flex flex-col space-y-1">
           <p class="font-bold">Главная</p>
           <a href="">
@@ -187,7 +187,7 @@
         </section>
       </div>
 
-      <div class="text-sm grid grid-rows-2 mt-10">
+      <div class="grid grid-rows-2 lg:flex lg:space-x-8 text-sm lg:text-lg">
         <section class="space-y-4">
           <div>
             <p>Телефон:</p>
@@ -199,18 +199,18 @@
           </div>
         </section>
         <section class="flex flex-col space-y-6">
-          <div class="space-x-7">
-            <button><img src="./img/inst_logo.svg" alt="" /></button>
-            <button><img src="./img/vk_logo.svg" alt="" /></button>
+          <div class="space-x-7 lg:space-x-11">
+            <button><img src="./img/inst_logo.svg" alt="" class="lg:w-12"/></button>
+            <button><img src="./img/vk_logo.svg" alt="" class="lg:w-12"/></button>
           </div>
-          <div class="space-x-7">
-            <button><img src="./img/teleg_logo.svg" alt="" /></button>
-            <button><img src="./img/wa_logo.svg" alt="" /></button>
+          <div class="space-x-7 lg:space-x-11">
+            <button><img src="./img/teleg_logo.svg" alt="" class="lg:w-12"/></button>
+            <button><img src="./img/wa_logo.svg" alt="" class="lg:w-12"/></button>
           </div>
         </section>
       </div>
     </div>
-    <p class="py-12 px-10 text-sm">
+    <p class="py-12 px-10 text-sm lg:text-lg">
       &copy; 2015-2022 — Snitko.camp <br class="lg:hidden" /> семейный лагерь в Бухте Петрова.
     </p>
   </footer>
