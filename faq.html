@@ -1,229 +1,239 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="main.css">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<style type="text/tailwindcss">
-  @layer components {
-    .black_hole {
+  <style type="text/tailwindcss">
+    @layer components {
+      .black_hole {
         @apply bg-clifford;
+      }
     }
-  }
-</style>
+  </style>
 
-<script src="tailwind.config.js" type="text/javascript"></script>
+  <script src="tailwind.config.js" type="text/javascript"></script>
 
-<body class="font-['Arial']">
-  <header class="sticky top-0 lg:mx-auto z-50">
-    <div
-      class="absolute w-full flex flex-row justify-between items-center px-10 mt-2"
-    >
-      <img class="w-10 h-10 lg:w-12 lg:h-12" src="./img/logo.svg" />
-      <button class="lg:hidden">
-        <img src="./img/burger_menu.svg" />
-      </button>
-      <ul class="hidden lg:block text-white font-bold space-x-24">
-        <li class="inline-block">Главная</li>
-        <li class="inline-block">Шатры</li>
-        <li class="inline-block">F.A.Q.</li>
-        <li class="inline-block">Правила</li>
-        <li class="inline-block">Забранировать</li>
-      </ul>
-    </div>
-  </header>
-  <main>
-    <div class="relative">
-      <img class="w-full -z-10" src="./img/mobile_others_header.svg" alt="" srcset="" />
-      <div class="absolute top-0 w-full text-center text-white">
-        <h1 class="pt-20 lg:pt-24 text-xl lg:text-5xl text-center font-black text-white">Ответы на частые вопросы</h1>
+  <body class="font-['Arial']">
+    <header class="sticky top-0 lg:mx-auto z-50">
+      <div
+        class="absolute w-full flex flex-row justify-between items-center px-10 mt-2"
+      >
+        <img class="w-10 h-10 lg:w-12 lg:h-12" src="./img/logo.svg" />
+        <button class="lg:hidden">
+          <img src="./img/burger_menu.svg" />
+        </button>
+        <ul class="hidden lg:block text-white font-bold space-x-24">
+          <li class="inline-block">Главная</li>
+          <li class="inline-block">Шатры</li>
+          <li class="inline-block">F.A.Q.</li>
+          <li class="inline-block">Правила</li>
+          <li class="inline-block">Забранировать</li>
+        </ul>
       </div>
-    </div>
-
-    </div>
-    <div class="grid justify-items-center grid-flow-row mb-14 space-y-5">
-
-      <section class="w-72">
-        <p class=" font-bold text-xl">Бытовые условия</p>
-        <ul class="mt-2 space-y-1">
-          <li>Организация питания</li>
-          <li>Работа повара</li>
-          <li>Летний душ</li>
-          <li>Туалеты</li>
-          <li>Мангал, дрова, костровые места</li>
-        </ul>
+    </header>
+    <main>
+      <div class="relative">
+        <img
+          class="lg:hidden w-full -z-10"
+          src="./img/mobile_others_header.svg"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="hidden lg:block w-full -z-10 select-none"
+          src="./img/desktop_others_header.svg"
+          alt=""
+          srcset=""
+        />
+        <div class="absolute top-0 w-full text-center text-white">
+          <h1
+            class="pt-20 lg:pt-24 text-xl lg:text-5xl text-center font-black text-white"
+          >
+            Ответы на частые вопросы
+          </h1>
+        </div>
+      </div>
+      <section
+        class="flex flex-col items-center w-72 lg:w-3/5 mx-auto space-y-5 lg:space-y-20 lg:-mt-20"
+      >
+        <div class="w-full">
+          <p class="font-bold text-xl lg:text-3xl">Бытовые условия</p>
+          <ul class="mt-3 lg:mt-10 space-y-2 lg:space-y-4 lg:text-2xl">
+            <li>Организация питания</li>
+            <li>Работа повара</li>
+            <li>Летний душ</li>
+            <li>Туалеты</li>
+            <li>Мангал, дрова, костровые места</li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <p class="font-bold text-xl lg:text-3xl">Запреты бухты Петрова</p>
+          <ul class="mt-3 lg:mt-10 space-y-2 lg:space-y-4 lg:text-2xl">
+            <li>Режим тишины</li>
+            <li>Домашние животные</li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <p class="font-bold text-xl lg:text-3xl">Со своей палаткой</p>
+          <ul class="mt-3 lg:mt-10 space-y-2 lg:space-y-4 lg:text-2xl">
+            <li>Есть ли доплаты за свои палатки?</li>
+            <li>Могу ли я выбрать место для размещения своей палатки?</li>
+            <li>Что такое лимиты на размещение?</li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <p class="font-bold text-xl lg:text-3xl">Палатки «Стандарт»</p>
+          <ul class="mt-3 lg:mt-10 space-y-2 lg:space-y-4 lg:text-2xl">
+            <li>Что внутри?</li>
+            <li>Что не входит в стоимость?</li>
+            <li>Где готовить еду?</li>
+          </ul>
+        </div>
+        <div class="w-full">
+          <p class="font-bold text-xl lg:text-3xl">Палатки «Комфорт»</p>
+          <ul class="mt-3 lg:mt-10 space-y-2 lg:space-y-4 lg:text-2xl">
+            <li>Что внутри?</li>
+            <li>Что не входит в стоимость?</li>
+          </ul>
+        </div>
       </section>
-
-      <section class="w-72">
-        <p class=" font-bold text-xl">Запреты бухты Петрова</p>
-        <ul class="mt-2 space-y-1">
-          <li>Режим тишины</li>
-          <li>Домашние животные</li>
-        </ul>
-      </section>
-
-      <section class="w-72">
-        <p class="font-bold text-xl">Со своей палаткой</p>
-        <ul class="mt-2 space-y-1">
-          <li>Есть ли доплаты за свои палатки?</li>
-          <li>Могу ли я выбрать место для размещения своей палатки?</li>
-          <li>Что такое лимиты на размещение?</li>
-        </ul>
-      </section>
-
-      <section class="w-72">
-        <p class=" font-bold text-xl">Палатки «Стандарт»</p>
-        <ul class="mt-2 space-y-1">
-          <li>Что внутри?</li>
-          <li>Что не входит в стоимость?</li>
-          <li>Где готовить еду?</li>
-        </ul>
-      </section>
-
-      <section class="w-72">
-        <p class=" font-bold text-xl">Палатки «Комфорт»</p>
-        <ul class="mt-2 space-y-1">
-          <li>Что внутри?</li>
-          <li>Что не входит в стоимость?</li>
-        </ul>
-      </section>
-
-      <section class="w-72 space-y-7">
-        <p class="font-bold text-xl w-72">Как добраться</p>
+      <div class="w-72 lg:w-3/5 mx-auto mt-5 lg:mt-32 space-y-7">
+        <p class="font-bold text-xl lg:text-3xl">Как добраться</p>
         <img src="./img/map.svg" alt="" />
-        <div class="text-sm space-y-4">
+        <div class="text-sm lg:text-xl space-y-4">
           <p>
-            База отдыха «Бухта Петрова» находится в Лазовском районе. Расстояние от Владивостока 320 км.
+            База отдыха «Бухта Петрова» находится в Лазовском районе. Расстояние
+            от Владивостока 320 км.
           </p>
           <p>
-            Дорога преимущественно асфальтированная, но есть участки с грунтовой дорогой. Добраться можно
-            на любом автомобиле - к нам спокойно доезжают на низких Prius или Fit, но важно соблюдать скоростной режим!
+            Дорога преимущественно асфальтированная, но есть участки с грунтовой
+            дорогой. Добраться можно на любом автомобиле - к нам спокойно
+            доезжают на низких Prius или Fit, но важно соблюдать скоростной
+            режим!
           </p>
         </div>
-        <button class="w-44 h-11 mx-auto text-white text-sm bg-[#33813A] rounded-lg font-bold block">
+        <button
+          class="w-44 h-11 mx-auto text-white text-sm lg:text-xl bg-[#33813A] rounded-lg font-bold block"
+        >
           На карте
         </button>
-      </section>
-
-      <section class="space-y-7">
-        <p class="font-bold text-xl w-72 text-center">
-          Остались вопросы?<br>
+      </div>
+      <div class="w-72 lg:w-1/2 mx-auto mt-16 lg:mt-36">
+        <p class="font-bold text-xl text-center">
+          Остались вопросы?<br />
           Мы всегда готовы помочь
         </p>
-        <div class="flex flex-row justify-evenly">
+        <div class="flex justify-evenly mt-7">
           <a><img src="./img/wa_green_logo.svg" alt="" /></a>
           <a><img src="./img/tg_green_logo.svg" alt="" /></a>
         </div>
-      </section>
-    </div>
-
-  </main>
-  <footer class="text-white bg-[#33813A]">
-    <div class="bg-white">
-      <img src="./img/footer_hat.svg" alt="" class="lg:hidden w-full" />
-      <img
-        src="./img/desktop_footer_hat.svg"
-        alt=""
-        class="hidden lg:block w-full"
-      />
-    </div>
-    <div
-      class="flex flex-wrap justify-between lg:justify-center gap-y-4 lg:gap-x-20 mt-10 px-10 text-white"
-    >
+      </div>
+    </main>
+    <footer class="text-white bg-[#33813A]">
+      <div class="bg-white">
+        <img src="./img/footer_hat.svg" alt="" class="lg:hidden w-full" />
+        <img
+          src="./img/desktop_footer_hat.svg"
+          alt=""
+          class="hidden lg:block w-full"
+        />
+      </div>
       <div
-        class="flex flex-col md:flex-row gap-4 text-xs lg:text-lg lg:space-x-20"
+        class="flex flex-wrap justify-between lg:justify-center gap-y-4 lg:gap-x-20 mt-10 px-10 text-white"
       >
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">Главная</p>
-          <a href="">
-            <span>Фото</span>
-          </a>
-          <a href="">
-            <span>Видео</span>
-          </a>
-        </section>
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">Шатры</p>
-          <a href="">
-            <span>Эконом</span>
-          </a>
-          <a href="">
-            <span>Стандарт</span>
-          </a>
-          <a href="">
-            <span>Комфорт</span>
-          </a>
-          <a href="">
-            <span>Доп. услуги</span>
-          </a>
-        </section>
-        <section class="flex flex-col space-y-1">
-          <p class="font-bold">F.A.Q</p>
-          <a href="">
-            <span>Как добраться</span>
-          </a>
-        </section>
-        <section>
-          <a href="" class="font-bold flex">Правила</a>
-        </section>
-        <section>
-          <a href="" class="font-bold">Забронировать</a>
-        </section>
-      </div>
-      <div
-        class="flex flex-wrap flex-col lg:flex-row lg:space-x-6 text-sm lg:text-lg"
+        <div
+          class="flex flex-col md:flex-row gap-4 text-xs lg:text-lg lg:space-x-20"
         >
-        <section class="space-y-4 mb-5">
-          <div>
-            <p>Телефон:</p>
-            <span>+7 (924) 527-09-92</span>
-          </div>
-          <div>
-            <p>Почта:</p>
-            <span>admin@snitkocamp.ru</span>
-          </div>
-        </section>
-        <section class="grid grid-rows-2 space-y-3 lg:space-y-0">
-          <div class="space-x-7 lg:space-x-11">
-            <button>
-              <img src="./img/inst_logo.svg" alt="" class="lg:w-12" />
-            </button>
-            <button>
-              <img src="./img/vk_logo.svg" alt="" class="lg:w-12" />
-            </button>
-          </div>
-          <div class="space-x-7 lg:space-x-11">
-            <button>
-              <img src="./img/teleg_logo.svg" alt="" class="lg:w-12" />
-            </button>
-            <button>
-              <img src="./img/wa_logo.svg" alt="" class="lg:w-12" />
-            </button>
-          </div>
-        </section>
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">Главная</p>
+            <a href="">
+              <span>Фото</span>
+            </a>
+            <a href="">
+              <span>Видео</span>
+            </a>
+          </section>
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">Шатры</p>
+            <a href="">
+              <span>Эконом</span>
+            </a>
+            <a href="">
+              <span>Стандарт</span>
+            </a>
+            <a href="">
+              <span>Комфорт</span>
+            </a>
+            <a href="">
+              <span>Доп. услуги</span>
+            </a>
+          </section>
+          <section class="flex flex-col space-y-1">
+            <p class="font-bold">F.A.Q</p>
+            <a href="">
+              <span>Как добраться</span>
+            </a>
+          </section>
+          <section>
+            <a href="" class="font-bold flex">Правила</a>
+          </section>
+          <section>
+            <a href="" class="font-bold">Забронировать</a>
+          </section>
+        </div>
+        <div
+          class="flex flex-wrap flex-col lg:flex-row lg:space-x-6 text-sm lg:text-lg"
+        >
+          <section class="space-y-4 mb-5">
+            <div>
+              <p>Телефон:</p>
+              <span>+7 (924) 527-09-92</span>
+            </div>
+            <div>
+              <p>Почта:</p>
+              <span>admin@snitkocamp.ru</span>
+            </div>
+          </section>
+          <section class="grid grid-rows-2 space-y-3 lg:space-y-0">
+            <div class="space-x-7 lg:space-x-11">
+              <button>
+                <img src="./img/inst_logo.svg" alt="" class="lg:w-12" />
+              </button>
+              <button>
+                <img src="./img/vk_logo.svg" alt="" class="lg:w-12" />
+              </button>
+            </div>
+            <div class="space-x-7 lg:space-x-11">
+              <button>
+                <img src="./img/teleg_logo.svg" alt="" class="lg:w-12" />
+              </button>
+              <button>
+                <img src="./img/wa_logo.svg" alt="" class="lg:w-12" />
+              </button>
+            </div>
+          </section>
+        </div>
       </div>
-    </div>
-    <p class="pt-12 pb-3 px-10 text-sm lg:text-lg text-left lg:text-center">
-      &copy; 2015-2022 — Snitko.camp <br class="md:hidden" />
-      семейный лагерь в Бухте Петрова.
-    </p>
-  </footer>
-</body>
+      <p class="pt-12 pb-3 px-10 text-sm lg:text-lg text-left lg:text-center">
+        &copy; 2015-2022 — Snitko.camp <br class="md:hidden" />
+        семейный лагерь в Бухте Петрова.
+      </p>
+    </footer>
+  </body>
 
-<script>
-  tailwind.config = {
-    theme: {
-      extend: {
-        colors: {
-          clifford: '#da373d',
-        }
-      }
-    }
-  }
-</script>
-
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
 </html>
