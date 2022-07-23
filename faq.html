@@ -101,10 +101,14 @@
           </ul>
         </div>
       </section>
-      <div class="w-72 lg:w-3/5 mx-auto mt-5 lg:mt-32 space-y-7">
-        <p class="font-bold text-xl lg:text-3xl">Как добраться</p>
-        <img src="./img/map.svg" alt="" />
-        <div class="text-sm lg:text-xl space-y-4">
+      <div class="lg:grid lg:grid-cols-[40%_auto] lg:gap-x-16 w-72 lg:w-3/5 mx-auto mt-5 lg:mt-32 space-y-7 lg:space-y-8">
+        <p class="lg:row-start-1 lg:col-start-1 font-bold text-xl lg:text-3xl">Как добраться</p>
+        <div
+          class="w-full lg:max-w-[680px] lg:row-span-4 lg:col-start-2"
+        >
+          <img src="./img/map.svg" alt="" class="w-full"/>
+        </div>
+        <div class="text-sm l lg:text-xl space-y-4 lg:space-y-5">
           <p>
             База отдыха «Бухта Петрова» находится в Лазовском районе. Расстояние
             от Владивостока 320 км.
@@ -117,19 +121,19 @@
           </p>
         </div>
         <button
-          class="w-44 h-11 mx-auto text-white text-sm lg:text-xl bg-[#33813A] rounded-lg font-bold block"
+          class="lg:col-start-1 w-44 h-11 mx-auto lg:mx-0 text-white text-sm lg:text-xl bg-[#33813A] rounded-lg font-bold block"
         >
           На карте
         </button>
       </div>
       <div class="w-72 lg:w-1/2 mx-auto mt-16 lg:mt-36">
-        <p class="font-bold text-xl text-center">
+        <p class="font-bold text-xl lg:text-3xl text-center">
           Остались вопросы?<br />
           Мы всегда готовы помочь
         </p>
-        <div class="flex justify-evenly mt-7">
-          <a><img src="./img/wa_green_logo.svg" alt="" /></a>
-          <a><img src="./img/tg_green_logo.svg" alt="" /></a>
+        <div class="flex justify-evenly lg:mx-24 mt-7 mb-16 lg:mb-24">
+          <a class="lg:cursor-pointer"><img src="./img/wa_green_logo.svg" alt="" class="lg:w-20"/></a>
+          <a class="lg:cursor-pointer"><img src="./img/tg_green_logo.svg" alt="" class="lg:w-20"/></a>
         </div>
       </div>
     </main>
